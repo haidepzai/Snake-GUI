@@ -16,4 +16,4 @@
 | <a href="https://gitlab.com/haidepzai/snakegui" target="_blank">**Snake GUI**</a>
 
 
-| [![Hai](https://i.ibb.co/41DLn19/snake.jpg)](https://gitlab.com/haidepzai/snakegui)
+| [![Hai](https://i.ibb.co/1zQVBdk/snake.jpg)](https://gitlab.com/haidepzai/snakegui)
