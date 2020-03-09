@@ -8,6 +8,7 @@ import java.awt.*;
 public class Draw extends JLabel {
 
     Point p;
+    private static JLabel textField = new JLabel("<html>By Hai © <br> 2020</html>");
 
     protected void paintComponent(Graphics g){
         super.paintComponent(g);
@@ -48,9 +49,22 @@ public class Draw extends JLabel {
         g.drawRect(Gui.xOff, Gui.yOff, 512,512); //Spielfeldbreite 16x16 Felder bei 32x32px
 
         //Draw Score
-        g.setFont(new Font("Arial", Font.BOLD,20));
+        g.setFont(new Font("Lucida Handwriting", Font.ITALIC,18));
         g.drawString("Score: " + Snake.score, 5,25);
         g.drawString("Highscore: " + Snake.highscore, 655,25);
+
+        //Draw Instruction
+        g.setColor(new Color(0x1078F4));
+        g.drawString("How to Play:", 5, 75);
+        g.drawString("W: Up", 5, 125);
+        g.drawString("S: Down", 5, 175);
+        g.drawString("A: Left", 5, 225);
+        g.drawString("D: Right", 5, 275);
+
+        textField.setHorizontalAlignment(SwingConstants.CENTER);
+        textField.setFont(new Font("Lucida Handwriting", Font.BOLD | Font.ITALIC, 24));
+        textField.setBounds(535, 425, 355, 161);
+        add(textField); //Ins GridLayout hinzufügen
 
         repaint(); //Ruft die Methode automatisch wieder auf
     }

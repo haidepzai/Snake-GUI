@@ -5,12 +5,12 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Food {
     int x;
     int y;
-    //Random Food
+    //Random (Start) Food (Initialize)
     public Food(){
         this.x = ThreadLocalRandom.current().nextInt(0,15);
         this.y = ThreadLocalRandom.current().nextInt(0,15);
     }
-
+    //Wird jedes Mal aufgeruden, wenn Snake ein Food berührt
     public void reset(){
         this.x = ThreadLocalRandom.current().nextInt(0,15);
         this.y = ThreadLocalRandom.current().nextInt(0,15);

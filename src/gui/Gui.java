@@ -15,7 +15,7 @@ public class Gui {
     public static int yOff = 20;  //Margin-Top
 
     public void create(){
-        frame = new JFrame("snake");
+        frame = new JFrame("Snake by Hai");
         frame.setSize(width,height);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLocationRelativeTo(null); //Starten des Programms in der Mitte

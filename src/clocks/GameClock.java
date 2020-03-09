@@ -10,7 +10,7 @@ public class GameClock extends Thread {
     public void run(){
         while(running){
             try {
-                sleep(speed);
+                sleep(speed); //Thread "schlafen" legen für 2ms, um zu reagieren (sonst zu schnell)
                 //Nach sleep -> neue Tasten empfangen:
                 Snake.move();
                 Snake.waitToMove = false;
