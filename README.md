@@ -11,6 +11,10 @@
 >If hit yourself or the border, the game is over!
 >Made with Java Swing.
 
+## How to use
+
+> Open the jar file to execute the program
+
 ## Screenshot
 
 | <a href="https://gitlab.com/haidepzai/snakegui" target="_blank">**Snake GUI**</a>
